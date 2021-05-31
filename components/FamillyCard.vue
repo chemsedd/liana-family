@@ -16,10 +16,10 @@ export default {
 
 <style>
 .card {
-  @apply flex flex-col items-center;
-  @apply text-white font-semibold uppercase;
-  @apply bg-green-400 rounded-md shadow-md p-8;
-  @apply hover:bg-green-500;
+  @apply inline-flex items-center text-center;
+  @apply text-gray-700 font-semibold uppercase;
+  @apply bg-gray-50 rounded-full shadow-md px-8 py-2;
+  @apply hover:bg-gray-300;
 }
 
 .card a {

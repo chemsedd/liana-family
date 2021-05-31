@@ -1,5 +1,6 @@
 <template>
-  <div class="app-container">
+  <div class="app-container relative">
+    <div class="app-bg"></div>
     <my-header />
     <Nuxt />
     <my-footer />
@@ -18,8 +19,15 @@ html {
   box-sizing: border-box;
 }
 
+.app-bg {
+  background: url(~/assets/liana.jpg);
+  filter: brightness(40%);
+  @apply absolute bg-cover w-full h-full;
+  z-index: -1;
+}
+
 .app-container {
   @apply flex flex-col justify-between items-center;
-  @apply w-screen h-screen bg-gray-100;
+  @apply w-screen h-screen;
 }
 </style>

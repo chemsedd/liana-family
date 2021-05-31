@@ -1,9 +1,15 @@
 <template>
   <main class="main-container">
-    <h1 class="text-4xl font-bold capitalize">Familles de Liana</h1>
-    <div>
-      <input type="text" name="name" id="name" />
+    <h1 class="text-4xl text-white font-bold capitalize">Familles de Liana</h1>
+    <div class="flex items-center justify-center gap-4">
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Nom de famille (e.x: Senoussi...)"
+      />
       <a
+        class="bg-gray-50 py-2 px-4 rounded shadow"
         :href="`https://online.heredis.com/fr/search/?name=senoussi&firstname=&place=`"
         target="blank"
         >Check</a
@@ -14,7 +20,7 @@
       <familly-card name="senoussi" />
       <familly-card name="bouzaher" />
       <familly-card name="masmoudi" />
-      <familly-card name="khra" />
+      <familly-card name="bensaid" />
     </div>
   </main>
 </template>
@@ -52,5 +58,9 @@ body {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
+}
+
+input {
+  @apply rounded-md px-4 py-2;
 }
 </style>

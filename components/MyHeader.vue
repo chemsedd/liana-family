@@ -1,6 +1,6 @@
 <template>
   <header class="header-container">
-    <h1>Liana</h1>
+    <a href="/" class="font-bold uppercase text-2xl">Liana</a>
     <ul class="header-links">
       <li>Acceuil</li>
       <li>About</li>
@@ -15,7 +15,7 @@ export default {};
 <style>
 .header-container {
   @apply flex justify-between items-center;
-  @apply py-4 px-10 w-full;
+  @apply py-4 px-20 w-full;
   @apply bg-gray-900 text-gray-100;
 }
 
