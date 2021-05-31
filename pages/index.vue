@@ -23,18 +23,19 @@
         placeholder="Prénom"
       />
       <a
-        class="bg-gray-50 py-2 px-4 rounded shadow"
+        class="bg-gray-50 w-10 h-10 rounded shadow flex items-center justify-center hover:bg-gray-200"
         :href="`https://online.heredis.com/fr/search/?name=${name}&firstname=${firstname}&place=`"
         target="blank"
-        >Check</a
       >
+        <img src="~/assets/search.svg" alt="search Liana" class="w-5 h-5"
+      /></a>
     </div>
     <hr class="w-full" />
     <div class="cards-container">
-      <familly-card color="green-800" name="senoussi" />
-      <familly-card color="blue-800" name="bouzaher" />
-      <familly-card color="yellow-800" name="masmoudi" />
-      <familly-card color="pink-800" name="bensaid" />
+      <familly-card class="bg-green-800" name="senoussi" />
+      <familly-card class="bg-blue-800" name="bouzaher" />
+      <familly-card class="bg-yellow-800" name="masmoudi" />
+      <familly-card class="bg-pink-800" name="bensaid" />
     </div>
   </main>
 </template>

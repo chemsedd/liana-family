@@ -1,5 +1,5 @@
 <template>
-  <div :class="`card bg-${color}`" @click="goToTree()">
+  <div :class="`card `" @click="goToTree()">
     <a
       :href="`https://online.heredis.com/fr/search/?name=${name}&firstname=&place=`"
       target="_blank"
@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  props: ["name", "color"],
+  props: ["name"],
   methods: {
     goToTree() {
       this.$refs[`${this.name}_tree`].click();
