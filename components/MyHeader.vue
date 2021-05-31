@@ -14,19 +14,16 @@ export default {};
 
 <style>
 .header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #0f0f0f;
-  color: #ffffff;
-  padding: 10px 40px;
-
-  width: 100%;
+  @apply flex justify-between items-center;
+  @apply py-4 px-10 w-full;
+  @apply bg-gray-900 text-gray-100;
 }
 
 .header-links {
-  display: flex;
-  justify-content: end;
-  gap: 20px;
+  @apply flex justify-end items-center gap-4;
+}
+
+ul.header-links li {
+  @apply font-bold;
 }
 </style>

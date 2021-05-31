@@ -12,11 +12,7 @@ export default {};
 
 <style>
 .footer-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #0f0f0f;
-  color: #ffffff;
-  padding: 20px;
+  @apply flex justify-center items-center;
+  @apply text-white bg-gray-800 py-4 px-10;
 }
 </style>

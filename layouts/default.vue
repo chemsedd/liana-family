@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="app-container">
     <my-header />
     <Nuxt />
     <my-footer />
@@ -18,25 +18,8 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  background-color: #fefefe;
-}
-
-ul,
-ol {
-  list-style: none;
+.app-container {
+  @apply flex flex-col justify-between items-center;
+  @apply w-screen h-screen bg-gray-100;
 }
 </style>
