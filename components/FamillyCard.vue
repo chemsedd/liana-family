@@ -1,8 +1,9 @@
 <template>
-  <div class="card">
+  <div :class="`card bg-${color}`" @click="goToTree()">
     <a
       :href="`https://online.heredis.com/fr/search/?name=${name}&firstname=&place=`"
       target="_blank"
+      :ref="`${name}_tree`"
       >{{ name }}
     </a>
   </div>
@@ -10,16 +11,24 @@
 
 <script>
 export default {
-  props: ["name"],
+  props: ["name", "color"],
+  methods: {
+    goToTree() {
+      this.$refs[`${this.name}_tree`].click();
+    },
+  },
 };
 </script>
 
 <style>
 .card {
   @apply inline-flex items-center text-center;
-  @apply text-gray-700 font-semibold uppercase;
-  @apply bg-gray-50 rounded-full shadow-md px-8 py-2;
-  @apply hover:bg-gray-300;
+  @apply text-white font-semibold uppercase;
+  @apply rounded-lg shadow-md px-8 py-2 bg-opacity-60;
+  @apply hover:bg-opacity-95;
+  &:hover {
+    @apply ring cursor-pointer;
+  }
 }
 
 .card a {

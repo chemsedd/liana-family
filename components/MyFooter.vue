@@ -1,9 +1,5 @@
 <template>
-  <footer class="footer-container">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos harum provident
-    voluptas consectetur totam mollitia autem sint minus unde quaerat cum,
-    laboriosam quibusdam asperiores magni minima nihil quidem eveniet dicta.
-  </footer>
+  <footer class="footer-container">Copyrights reserverd &copy; 2021.</footer>
 </template>
 
 <script>
@@ -12,7 +8,8 @@ export default {};
 
 <style>
 .footer-container {
-  @apply flex justify-center items-center;
-  @apply text-white bg-gray-800 py-4 px-10;
+  @apply flex justify-center md:justify-end items-center;
+  @apply w-full;
+  @apply text-white  py-4 px-10 text-opacity-50;
 }
 </style>

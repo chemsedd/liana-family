@@ -1,10 +1,7 @@
 <template>
   <header class="header-container">
-    <a href="/" class="font-bold uppercase text-2xl">Liana</a>
-    <ul class="header-links">
-      <li>Acceuil</li>
-      <li>About</li>
-    </ul>
+    <a href="/" class="font-bold uppercase text-2xl">Familles de Liana</a>
+    <h2>Rechercher un arbre généalogique des familles de Liana</h2>
   </header>
 </template>
 
@@ -14,16 +11,9 @@ export default {};
 
 <style>
 .header-container {
-  @apply flex justify-between items-center;
-  @apply py-4 px-20 w-full;
-  @apply bg-gray-900 text-gray-100;
-}
-
-.header-links {
-  @apply flex justify-end items-center gap-4;
-}
-
-ul.header-links li {
-  @apply font-bold;
+  @apply flex flex-col gap-y-4;
+  @apply md:flex-row md:justify-between md:items-center;
+  @apply py-4 px-16 md:px-20 w-full;
+  @apply bg-green-800 bg-opacity-90 text-gray-100;
 }
 </style>
